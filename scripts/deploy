@@ -10,5 +10,5 @@ rsync -az --delete --exclude '.git*' ../_site/ .
 touch .nojekyll
 git add -A .
 git commit -m "Pull request: ${TRAVIS_PULL_REQUEST}. Generated Jekyll site by Travis CI - ${TRAVIS_BUILD_NUMBER}"
-git push "https://${GITHUB_TOKEN}@${GITHUB_REPO}" HEAD:${REPO_TARGET_BRANCH} &> /dev/null
+git push "https://${GITHUB_TOKEN}@${GITHUB_REPO}" HEAD:${REPO_TARGET_BRANCH} 2>&1 | sed -e "s/\(To https:\/\/\).*\(@\)/\1[secure]\2/g"
 echo "Deploy finished"
