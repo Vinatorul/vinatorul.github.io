@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/vinatorul
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://kuvaev.me
+  * I am vinatorul (https://keybase.io/vinatorul) on keybase.
+  * I have a public key ASCL5BhrqJPb36da9LJwaf3GmGXNgGuGvC0MR9G_bDva_go
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01208be4186ba893dbdfa75af4b27069fdc69865cd806b86bc2d0c47d1bf6c3bdafe0a",
+            "host": "keybase.io",
+            "kid": "01208be4186ba893dbdfa75af4b27069fdc69865cd806b86bc2d0c47d1bf6c3bdafe0a",
+            "uid": "fd34b40a94b00d03208df6160f04ce19",
+            "username": "vinatorul"
+        },
+        "service": {
+            "hostname": "kuvaev.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.17"
+    },
+    "ctime": 1475263277,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1475263184,
+        "hash": "5eb15bb5f63eebe5abe51d7d05b55f148b980e6aba5546974f9254bedff957b9e91f63fd5ecb1c0d378a115787c3fba27a9c30835400fd614c24e6a602a6e6c5",
+        "seqno": 659534
+    },
+    "prev": "93a0fc8bb7c894b2f5411a27b4f84df017c9987c2197c5f5d9630912e9060008",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgi+QYa6iT29+nWvSycGn9xphlzYBrhrwtDEfRv2w72v4Kp3BheWxvYWTFAvJ7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwOGJlNDE4NmJhODkzZGJkZmE3NWFmNGIyNzA2OWZkYzY5ODY1Y2Q4MDZiODZiYzJkMGM0N2QxYmY2YzNiZGFmZTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOGJlNDE4NmJhODkzZGJkZmE3NWFmNGIyNzA2OWZkYzY5ODY1Y2Q4MDZiODZiYzJkMGM0N2QxYmY2YzNiZGFmZTBhIiwidWlkIjoiZmQzNGI0MGE5NGIwMGQwMzIwOGRmNjE2MGYwNGNlMTkiLCJ1c2VybmFtZSI6InZpbmF0b3J1bCJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoia3V2YWV2Lm1lIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xNyJ9LCJjdGltZSI6MTQ3NTI2MzI3NywiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDc1MjYzMTg0LCJoYXNoIjoiNWViMTViYjVmNjNlZWJlNWFiZTUxZDdkMDViNTVmMTQ4Yjk4MGU2YWJhNTU0Njk3NGY5MjU0YmVkZmY5NTdiOWU5MWY2M2ZkNWVjYjFjMGQzNzhhMTE1Nzg3YzNmYmEyN2E5YzMwODM1NDAwZmQ2MTRjMjRlNmE2MDJhNmU2YzUiLCJzZXFubyI6NjU5NTM0fSwicHJldiI6IjkzYTBmYzhiYjdjODk0YjJmNTQxMWEyN2I0Zjg0ZGYwMTdjOTk4N2MyMTk3YzVmNWQ5NjMwOTEyZTkwNjAwMDgiLCJzZXFubyI6MTEsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAdG27/F5MoaX+HaeTVh6PuyVqsol2DyMUM0ScnWnU4MCfcUF8x0qISEouhdn5qOths7jQCnj+mo0odEwCMKn6CahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEILKfL3Xci1cqh1kBSjuE8hTCwrvVfAEY2OWe0hVZ/aaIo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/vinatorul
+
+==================================================================
