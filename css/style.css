@@ -4,7 +4,7 @@
  */
 
 .readmore {
-	margin-right: 5px;
+    margin-right: 5px;
 }
 .navbar-nav {
     float: right;
@@ -19,19 +19,17 @@
     border: none;
 }
 .navbar-brand {
-	color: #FFFFFF !important;
-	font-size: 30px;
+    color: #FFFFFF !important;
+    font-size: 30px;
 }
 .navbar-nav>li>a {
     color: #FFFFFF !important;
     font-size: 25px;
 }
 header.intro-header {
-	background-color: #6d7ef8;
-	background-repeat: repeat;
-	color: #FFFFFF;
-	padding-bottom: 30px;
-	padding-top: 20px;
+    background-color: #6d7ef8;
+    background-repeat: repeat;
+    color: #FFFFFF;
     margin-bottom: 30px;
 }
 .well {
@@ -83,7 +81,7 @@ img {
 }
 .pagination ul > li > a:hover {
     background-color: #2582F2;
-	color: #fff;
+    color: #fff;
 }
 
 .pagination ul > li > a, .pagination ul > li > span {
@@ -93,9 +91,9 @@ img {
     text-decoration: none;
     background-color: #ffffff;
     border-top: 1px solid #dddddd;
-	border-bottom: 1px solid #dddddd;
-	border-left: 1px solid #dddddd;
-	border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
 }
 .pagination ul > li {
 display: inline;
