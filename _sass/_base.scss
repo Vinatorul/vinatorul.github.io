@@ -91,19 +91,14 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: darken($brand-color, 10%);
     text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
-
 
 
 /**
@@ -123,6 +118,68 @@ blockquote {
 }
 
 
+.post-tag {
+    display: inline-block;
+    background: rgba($brand-color, 0.15);
+    margin-right: .5rem;
+    border-radius: 4px;
+    color: darken($brand-color, 10%);
+    line-height: 1.5;
+    padding: 0rem 1rem;
+    margin: .3rem .1rem;
+    &:before {
+        content: "\f02b";
+        padding-right: .5em;
+        font-family: FontAwesome;
+    }
+    &:hover {
+        text-decoration: none;
+        background: $brand-color;
+        color: #fdfdfd;
+    }
+}
+
+.post-new {
+    display: inline-block;
+    background: rgba($brand-color, 0.15);
+    margin-right: .5rem;
+    border-radius: 4px;
+    color: darken($brand-color, 10%);
+    line-height: 1.5;
+    padding: 0rem 1rem;
+    margin: .3rem .1rem;
+    &:before {
+        content: "\f121";
+        padding-right: .5em;
+        font-family: FontAwesome;
+    }
+    &:hover {
+        text-decoration: none;
+        background: $brand-color;
+        color: #fdfdfd;
+    }
+}
+
+.post-cat {
+    display: inline-block;
+    background: rgba($brand-color, 0.15);
+    margin-right: .5rem;
+    border-radius: 4px;
+    color: darken($brand-color, 10%);
+    line-height: 1.5;
+    padding: 0rem 1rem;
+    margin: .3rem .1rem;
+    &:before {
+        content: "\f054";
+        padding-right: .5em;
+        font-family: FontAwesome;
+    }
+    &:hover {
+        text-decoration: none;
+        background: $brand-color;
+        color: #fdfdfd;
+    }
+}
 
 /**
  * Code formatting
