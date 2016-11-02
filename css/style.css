@@ -45,12 +45,6 @@ header.intro-header {
     box-shadow: none;
     border: 1px solid #E7E7E7;
 }
-.input {
-    background-image: url('../img/search.png');
-}
-form#cse-search-box {
-    background-image: url('../img/search.png') !important;
-}
 a {
     color: #2582F2;
     text-decoration: none;
