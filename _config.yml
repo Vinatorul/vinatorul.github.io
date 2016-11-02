@@ -8,7 +8,7 @@
 exclude: [script, vendor, Gemfile, Gemfile.lock]
 
 # Site settings
-title: kuvaev.me
+title: Coffee, code and stuff
 description: > # this means to ignore newlines until "baseurl:"
   That's something.
 baseurl: "" # the subpath of your site, e.g. /blog
