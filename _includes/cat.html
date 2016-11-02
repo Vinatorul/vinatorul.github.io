@@ -7,7 +7,7 @@
             <!-- Blog Post Content Column -->
             <div class="col-lg-8">
                 <!-- Blog Post -->
-                    <h1 style="color: #0F3C73;"><span class="outside-cats">{{page.cat_name}}</span></h1>
+                    <h1 style="color: #0F3C73;"><span class="outside-cats">Category {{page.cat_name}}</span></h1>
                     <div role="main" class="main-content">
                       {{ content }}
                     </div>
@@ -36,50 +36,37 @@
                 <!-- Blog Categories Well -->
                 <div class="well">
                     <h4>Blog Categories</h4>
-                    <div class="row">
-                        <div class="col-lg-6">
-                                {% for cat in site.categories %}
-                                {% assign cat_name = cat | first %}
-                                {% assign cat_size = cat | last | size %}
-                                {% assign cat_slug = cat_name | slugify  %}
-                                    <a class="bold" href="/category/{{cat_slug | prepend: site.baseurl}}">
-                                        {{cat_name}} ({{cat_size}})
-                                    </a>
-                        </div>
-                        <div class="col-lg-6">
+                        <p>
+                            {% for cat in site.categories %}
+                            {% assign cat_name = cat | first %}
+                            {% assign cat_size = cat | last | size %}
+                            {% assign cat_slug = cat_name | slugify  %}
+                                <a class="post-cat" href="/category/{{cat_slug | prepend: site.baseurl}}">{{cat_name}} ({{cat_size}})</a>
                             {% endfor %}
-                        </div>
-                    </div>
-                    <!-- /.row -->
+                        </p>
                 </div>
                 <!-- Side Widget Well -->
 
                 <!-- Side Widget Well -->
                 <div class="well">
                     <h4>Recent posts</h4>
-                        <ul class="posts" span="recent"> 
-                            {% for post in site.posts limit:5 %}  
-                               <li>  
-                                   <span>{{ post.date | date_to_string }}</span>
-                                   <a href="{{ BASE_PATH }}{{ post.url }}">  
-                                   {{ post.title }}</a>  
-                               </li>  
+                        <p>    
+                            {% for post in site.posts limit:5 %}                                   
+                                   <a class = "post-new" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }} ({{ post.date | date_to_string }})</a>
                             {% endfor %}  
-                        </ul>
+                        </p>
                 </div>
                 <!-- Side Widget Well -->
                 <div class="well">
                     <h4>Tags</h4>
-                        <ul>
+                        <p>
                             {% for tag in site.tags %}
                             {% assign tag_name = tag | first %}
                             {% assign tag_size = tag | last | size %}
-                            {% assign tag_slug = tag_name | slugify  %}
-                                <a class="tag-label bold" href="/tag/{{tag_slug | prepend: site.baseurl}}">
-                                    {{tag_name}} ({{tag_size}})
-                                </a>
+                            {% assign tag_slug = tag_name | slugify  %}                             
+                                <a class="post-tag" href="/tag/{{tag_slug | prepend: site.baseurl}}">{{tag_name}} ({{tag_size}})</a>
                             {% endfor %}
-                        </ul>
+                        </p>
                 </div>
 
             </div>

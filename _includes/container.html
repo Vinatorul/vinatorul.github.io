@@ -12,9 +12,9 @@
                             <h2>
                                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                             </h2>
-                            <div class="author" style="margin-top: -10px;">Posted by
-                                <i class="fa fa-user"></i><a href="https://github.com/Vinatorul"> {{ post.author}}</a>
-                                <span class="post-meta"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}</span>
+                            <div class="post-meta" style="margin-top: -10px;">Posted by
+                                <i class="fa fa-user"></i> {{ post.author}}
+                                <i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}
                             </div>
                             <div class="excerpt">{{ post.excerpt }}</div>
                             <div class="readmore" style="float: left;">
@@ -88,50 +88,37 @@
                 <!-- Blog Categories -->
                 <div class="well">
                     <h4>Blog Categories</h4>
-                    <div class="row">
-                        <div class="col-lg-6">
-                                {% for cat in site.categories %}
-                                {% assign cat_name = cat | first %}
-                                {% assign cat_size = cat | last | size %}
-                                {% assign cat_slug = cat_name | slugify  %}
-                                    <a class="bold" href="/category/{{cat_slug | prepend: site.baseurl}}">
-                                        {{cat_name}} ({{cat_size}})
-                                    </a>
-                        </div>
-                        <div class="col-lg-6">
+                        <p>
+                            {% for cat in site.categories %}
+                            {% assign cat_name = cat | first %}
+                            {% assign cat_size = cat | last | size %}
+                            {% assign cat_slug = cat_name | slugify  %}
+                                <a class="post-cat" href="/category/{{cat_slug | prepend: site.baseurl}}">{{cat_name}} ({{cat_size}})</a>
                             {% endfor %}
-                        </div>
-                    </div>
-                    <!-- /.row -->
+                        </p>
                 </div>
                 <!-- end -->
 
                 <!-- Recents post -->
                 <div class="well">
                     <h4>Recent posts</h4>
-                        <ul class="posts" span="recent">  
-                            {% for post in site.posts limit:5 %}  
-                               <li>  
-                                   <span>{{ post.date | date_to_string }}</span>
-                                   <a href="{{ BASE_PATH }}{{ post.url }}">  
-                                   {{ post.title }}</a>  
-                               </li>  
+                        <p>    
+                            {% for post in site.posts limit:5 %}                                   
+                                   <a class = "post-new" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }} ({{ post.date | date_to_string }})</a>
                             {% endfor %}  
-                        </ul>
+                        </p>
                 </div>
                 <!-- tags widget -->
                 <div class="well">
                     <h4>Tags</h4>
-                        <ul>
+                        <p>
                             {% for tag in site.tags %}
                             {% assign tag_name = tag | first %}
                             {% assign tag_size = tag | last | size %}
                             {% assign tag_slug = tag_name | slugify  %}
-                                <a class="tag-label bold" href="/tag/{{tag_slug | prepend: site.baseurl}}">
-                                    {{tag_name}} ({{tag_size}})
-                                </a>
+                                <a class="post-tag" href="/tag/{{tag_slug | prepend: site.baseurl}}">{{tag_name}} ({{tag_size}})</a>
                             {% endfor %}
-                        </ul>
+                        </p>
                 </div>             
 
             </div>
