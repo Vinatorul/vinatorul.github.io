@@ -10,7 +10,6 @@
                     <div class="post-list" style="list-style-type: none;">
                         {% for post in paginator.posts %}   
                             <h2>
-                                <img class="title-image" src="{{ "/img/dna.png" | prepend: site.baseurl }}"/>
                                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                             </h2>
                             <div class="author" style="margin-top: -10px;">Posted by
@@ -74,16 +73,18 @@
                 <div class="well">
                     <h4>Search</h4>
                     <div class="input-group">
-                    <form action="http://www.google.com" id="cse-search-box">
-                      <div>
-                        <input type="hidden" name="cx" value="" />
-                        <input type="hidden" name="ie" value="UTF-8" />
-                        <input type="text" name="q" size="20" />
-                        <input type="submit" name="sa" value="Search" />
-                      </div>
-                    </form>
-                    <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
-                </div>
+                    <script>
+                      (function() {
+                        var cx = '011165617435557860379:onydhtw3d9k';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:search></gcse:search>
             </div>
                 <!-- Blog Categories -->
                 <div class="well">
