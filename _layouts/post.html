@@ -13,6 +13,7 @@
                     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
                     <p class="post-meta">{% if page.author %} <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">by {{ page.author }}</span></span>{% endif %} <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><i class="fa fa-calendar"></i> {{ page.date | date: "%b %-d, %Y" }}</time></p>
                     </div>
+                     {{ content }}
                 </div>
                 Category {{ page.categories | join: ', ' }}
         </div>
