@@ -15,7 +15,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site
 twitter_username: Vinatorul
 github_username:  Vinatorul
-markdown: redcarpet
+
+# Gems
+gems: [jekyll-paginate]
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+paginate: 5
+paginate_path: 'page:num/'
+comments: true
+excerpt_separator: <!-- more -->
