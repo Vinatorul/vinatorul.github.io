@@ -102,6 +102,12 @@ a h2{
     color: #2582F2;
     text-decoration: none;
 }
+.post-list {
+    margin-bottom: 15px;
+}
+.post-list h2, .post-list p {
+    margin-bottom: 0px;
+}
 #mc_embed_signup .button:hover {
     background-color: #1C5484;
 }

@@ -1,19 +1,17 @@
-<div class="post">
+<div class="post-list">
 
-    <a href="{{ post.url | prepend: site.baseurl }}" class="post-title-link">
-      <h2>{{post.title}}</h2>
-    </a>
-
-    <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
-    
-    <div class="post-body">
-      {% if post.hero_low %}
-      {% endif %}
-      {{ post.excerpt }}
+    <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+    <div class="post-meta">Posted by
+        <i class="fa fa-user"></i> {{ post.author}}
+        <i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}
     </div>
-
-    <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">
-       <span class="read-more-text">Read More</span>
-    </a>
-
+    <div class="excerpt">{{ post.excerpt }}</div>
+    <div class="readmore">
+        {% if post.content | post_contains_excerpt_tag %}
+            <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+        {% endif %}
+    </div>   
+<hr>
 </div>
