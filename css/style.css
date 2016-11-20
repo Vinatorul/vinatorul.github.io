@@ -67,12 +67,6 @@ a:focus, a:hover {
     background-color: #fff;
     border-color: #adadad;
 }
-img {
-    vertical-align: middle;
-    float: left;
-    padding-right: 10px;
-    padding-bottom: 5px;
-}
 .title-image {
     width: 50px;
 }
@@ -155,4 +149,8 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 #brand {
     color: #fff; 
     font-size: 4em;
+}
+.centered {
+    margin: auto;
+    display: block;
 }
