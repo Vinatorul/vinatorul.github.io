@@ -7,26 +7,24 @@
             <!-- Blog Post Content Column -->
             <div class="col-lg-8">
                 <!-- Blog Post -->
-                    <div class="post-list" style="list-style-type: none;">
-                        {% for post in paginator.posts %}   
+                    {% for post in paginator.posts %} 
+                    <div class="post-list">  
                             <h2>
                                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                             </h2>
-                            <div class="post-meta" style="margin-top: -10px;">Posted by
+                            <div class="post-meta">Posted by
                                 <i class="fa fa-user"></i> {{ post.author}}
                                 <i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}
                             </div>
                             <div class="excerpt">{{ post.excerpt }}</div>
-                            <div class="readmore" style="float: left;">
+                            <div class="readmore">
                                 {% if post.content | post_contains_excerpt_tag %}
                                     <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
                                 {% endif %}
-                            </div>                              
+                            </div> 
+                        <hr>                             
                     </div>
-                    <hr>
-                        <div class="post-list" style="list-style-type: none;">          
-                            {% endfor %} 
-                        </div>
+                        {% endfor %}                            
                     <!-- Pagination links -->
                     <div class="pagination">
                       <ul>

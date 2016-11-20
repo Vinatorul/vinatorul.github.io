@@ -67,12 +67,6 @@ a:focus, a:hover {
     background-color: #fff;
     border-color: #adadad;
 }
-img {
-    vertical-align: middle;
-    float: left;
-    padding-right: 10px;
-    padding-bottom: 5px;
-}
 .title-image {
     width: 50px;
 }
@@ -102,6 +96,12 @@ a h2{
     color: #2582F2;
     text-decoration: none;
 }
+.post-list {
+    margin-bottom: 15px;
+}
+.post-list h2, .post-list p {
+    margin-bottom: 0px;
+}
 #mc_embed_signup .button:hover {
     background-color: #1C5484;
 }
@@ -127,7 +127,9 @@ a h2{
     width: auto;
 }
 #mc_embed_signup{
-background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
 }
 .gsc-control-cse {
     background-color: #f5f5f5 !important;
@@ -142,4 +144,13 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 }
 .gscb_a {
     font-size: 16px !important;
+}
+
+#brand {
+    color: #fff; 
+    font-size: 4em;
+}
+.centered {
+    margin: auto;
+    display: block;
 }
