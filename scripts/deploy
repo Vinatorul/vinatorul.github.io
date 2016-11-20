@@ -5,7 +5,7 @@ git clone https://$GITHUB_REPO
 cd $(basename ${GITHUB_REPO%.git})
 git checkout ${REPO_TARGET_BRANCH}
 git config user.name "Travis CI"
-git config user.email ${EMAIL}
+git config user.email "travis-ci@travis-ci.org"
 rsync -az --delete --exclude '.git*' ../_site/ .
 touch .nojekyll
 git add -A .
