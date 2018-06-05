@@ -1,9 +1,7 @@
 language: ruby
-rvm:
-- 2.2
 install: bundle install
 script:
-- bundle exec jekyll build --config _config.yml,_config_gh_pages.yml
+- bundle exec jekyll build --config _config.yml
 after_success:
 - if [ $TRAVIS_PULL_REQUEST = 'false' ] && [ $TRAVIS_BRANCH = 'source' ]; then
   chmod +x ./scripts/deploy;
