@@ -12,8 +12,7 @@
                             <h2>
                                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                             </h2>
-                            <div class="post-meta">Posted by
-                                <i class="fa fa-user"></i> {{ post.author}}
+                            <div class="post-meta">
                                 <i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}
                             </div>
                             <div class="excerpt">{{ post.excerpt }}</div>
@@ -31,13 +30,13 @@
                         {% if paginator.previous_page %}
 
                           {% if paginator.previous_page == 1 %}
-                            <li><a href="/sciblog/">Previous</a></li>
+                            <li><a href="/sciblog/">Предыдущие</a></li>
                           {% else %}
-                            <li><a href="/sciblog/page{{ paginator.previous_page }}">Previous</a></li>
+                            <li><a href="/sciblog/page{{ paginator.previous_page }}">Предыдущие</a></li>
                           {% endif %}
 
                         {% else %}
-                          <li><span class="disabled">Previous</span></li>
+                          <li><span class="disabled">Предыдущие</span></li>
                         {% endif %}
 
                         {% if paginator.page == 1 %}
@@ -56,9 +55,9 @@
                         {% endfor %}
 
                         {% if paginator.next_page %}
-                          <li><a href="/sciblog/page{{ paginator.next_page }}">Next</a></li>
+                          <li><a href="/sciblog/page{{ paginator.next_page }}">Следующие</a></li>
                         {% else %}
-                          <li><span class="disabled">Next</span></li>
+                          <li><span class="disabled">Следующие</span></li>
                         {% endif %}
                       </ul>
                     </div>
@@ -69,7 +68,7 @@
 
                 <!-- Blog Search -->
                 <div class="well">
-                    <h4>Search</h4>
+                    <h4>Поиск</h4>
                     <script>
                       (function() {
                         var cx = '011165617435557860379:onydhtw3d9k';
@@ -85,7 +84,7 @@
                 </div>
                 <!-- Blog Categories -->
                 <div class="well">
-                    <h4>Blog Categories</h4>
+                    <h4>Категории</h4>
                         <p>
                             {% for cat in site.categories %}
                             {% assign cat_name = cat | first %}
@@ -99,7 +98,7 @@
 
                 <!-- Recents post -->
                 <div class="well">
-                    <h4>Recent posts</h4>
+                    <h4>Последние публикации</h4>
                         <p>    
                             {% for post in site.posts limit:5 %}                                   
                                    <a class = "post-new" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }} ({{ post.date | date_to_string }})</a>
@@ -108,7 +107,7 @@
                 </div>
                 <!-- tags widget -->
                 <div class="well">
-                    <h4>Tags</h4>
+                    <h4>Теги</h4>
                         <p>
                             {% for tag in site.tags %}
                             {% assign tag_name = tag | first %}
