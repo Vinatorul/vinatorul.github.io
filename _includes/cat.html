@@ -7,7 +7,7 @@
             <!-- Blog Post Content Column -->
             <div class="col-lg-8">
                 <!-- Blog Post -->
-                    <h1 style="color: #0F3C73;"><span class="outside-cats">Category {{page.cat_name}}</span></h1>
+                    <h1 style="color: #0F3C73;"><span class="outside-cats">Категория {{page.cat_name}}</span></h1>
                     <div role="main" class="main-content">
                       {{ content }}
                     </div>
@@ -18,7 +18,7 @@
 
                 <!-- Blog Search Well -->
                 <div class="well">
-                    <h4>Search</h4>
+                    <h4>Поиск</h4>
                     <script>
                       (function() {
                         var cx = '011165617435557860379:onydhtw3d9k';
@@ -34,7 +34,7 @@
                 </div>
                 <!-- Blog Categories Well -->
                 <div class="well">
-                    <h4>Blog Categories</h4>
+                    <h4>Категории</h4>
                         <p>
                             {% for cat in site.categories %}
                             {% assign cat_name = cat | first %}
@@ -48,7 +48,7 @@
 
                 <!-- Side Widget Well -->
                 <div class="well">
-                    <h4>Recent posts</h4>
+                    <h4>Последние публикации</h4>
                         <p>    
                             {% for post in site.posts limit:5 %}                                   
                                    <a class = "post-new" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }} ({{ post.date | date_to_string }})</a>
@@ -57,7 +57,7 @@
                 </div>
                 <!-- Side Widget Well -->
                 <div class="well">
-                    <h4>Tags</h4>
+                    <h4>Теги</h4>
                         <p>
                             {% for tag in site.tags %}
                             {% assign tag_name = tag | first %}
