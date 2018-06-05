@@ -14,7 +14,7 @@ remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "air"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ru-RU"
 title                    : "Coffee, code and stuff"
 title_separator          : "-"
 name                     : "Alexander Kuvaev"
