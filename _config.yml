@@ -26,7 +26,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "staticman"
+  provider               : "staticman_v2"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
   branch                 : "master"
