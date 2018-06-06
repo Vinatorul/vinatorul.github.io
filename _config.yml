@@ -21,7 +21,7 @@ name                     : "Alexander Kuvaev"
 description              : "Coffee, code and stuff."
 url                      : "http://kuvaev.me"
 baseurl                  : ""
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "Vinatorul/vinatorul.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -44,8 +44,8 @@ staticman:
       options:
         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
-  siteKey                : 6LelyAoTAAAAAITilN2cyr5Vd2YmD2ogaXJxLjGP
-  secret                 : 6LelyAoTAAAAAK-6RU0xBWSt_vXPqF8O1vZJjtjh
+  siteKey                : "6LelyAoTAAAAAITilN2cyr5Vd2YmD2ogaXJxLjGP"
+  secret                 : "y9+N1OLjD7llun11fyLcUwBNT/mExN2PpCGBsXy3bizffNtOOJ/DcO3gnWFimOc8PEFwWKu9HS1FLO/5fNgfPrNttUf2EF60eLe25ZVMxnnykN3KeXkvSmUbao0ChWksBF6dYr/dzV6NDKYrXY70Oy8PFZagaRMShJQpUYDW0U4="
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true
