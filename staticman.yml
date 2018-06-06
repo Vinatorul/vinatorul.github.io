@@ -7,7 +7,7 @@ comments:
   #
   # Names of the fields the form is allowed to submit. If a field that is
   # not here is part of the request, an error will be thrown.
-  allowedFields: ["name", "email", "url", "message"]
+  allowedFields: ["name", "email", "message"]
 
   # (*) REQUIRED
   #
@@ -69,7 +69,7 @@ comments:
 
   # Names of required fields. If any of these isn't in the request or is empty,
   # an error will be thrown.
-  requiredFields: ["name", "email", "message"]
+  requiredFields: ["name", "message"]
 
   # List of transformations to apply to any of the fields supplied. Keys are
   # the name of the field and values are possible transformation types.
@@ -79,4 +79,4 @@ comments:
   reCaptcha:
     enabled: true
     siteKey: "6LelyAoTAAAAAITilN2cyr5Vd2YmD2ogaXJxLjGP"
-    secret: "qtY+Yxc0XeDn7Ol8y3HwJXeEP/cRcHZ6dwNcmbDL2xXAkkanS6GX/0H6XZ8JVkvILtciSd9diyyK2ai62LoppjCeunnunVM6T/af4VT2p02y8l/aaTnJTBWxW4VkRcGqczPb84CG98Yjk/w2A2N0A2gmVqD8HkReBg7qieFAfKQ="
+    secret: "BpwRjfut6El+K5LoXDdD73+SzlaAPeen8jIFRlZC2ZPUstoyd0+97XxtfHT159X09j3nqO/9NpCBqaAyShXm4ABAPkCJ5pr42Y9N+7Or5VOC6nbn7thM13uKRPvh015hatuAPQbo/rs9bftP+YGkTiWvuqz+nf0xIPiuG0bx5nA="
