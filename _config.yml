@@ -28,21 +28,21 @@ words_per_minute         : 200
 comments:
   provider               : "staticman_v2"
 staticman:
-  allowedFields          : # ['name', 'email', 'url', 'message']
+  allowedFields          : ["name", "email", "message"]
   branch                 : "master"
-  commitMessage          : # "New comment."
-  filename               : # comment-{@timestamp}
-  format                 : # "yml"
-  moderation             : # true
-  path                   : # "/_data/comments/{options.slug}" (default)
-  requiredFields         : # ['name', 'email', 'message']
+  commitMessage          : "Новый комментарий."
+  filename               : "entry{@timestamp}"
+  format                 : "yaml"
+  moderation             : true
+  path                   : "/_data/comments/{options.slug}"
+  requiredFields         : ['name', 'message']
   transforms:
-    email                : # "md5"
+    email                : "md5"
   generatedFields:
     date:
-      type               : # "date"
+      type               : "date"
       options:
-        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format           : "timestamp-seconds"
 reCaptcha:
   siteKey                : "6LelyAoTAAAAAITilN2cyr5Vd2YmD2ogaXJxLjGP"
   secret                 : "BpwRjfut6El+K5LoXDdD73+SzlaAPeen8jIFRlZC2ZPUstoyd0+97XxtfHT159X09j3nqO/9NpCBqaAyShXm4ABAPkCJ5pr42Y9N+7Or5VOC6nbn7thM13uKRPvh015hatuAPQbo/rs9bftP+YGkTiWvuqz+nf0xIPiuG0bx5nA="
