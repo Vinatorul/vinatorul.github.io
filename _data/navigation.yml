@@ -3,3 +3,5 @@ main:
     url: /categories/
   - title: "Теги"
     url: /tags/
+  - title: "Архив"
+    url: /year-archive/

@@ -18,7 +18,7 @@ locale                   : "ru-RU"
 title                    : "Coffee, code and stuff"
 title_separator          : "-"
 name                     : "Alexander Kuvaev"
-description              : "An amazing website."
+description              : "Coffee, code and stuff."
 url                      : "http://kuvaev.me"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -99,12 +99,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "Alexander Kuvaev"
+  name             : "Александр Куваев"
 #  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Преподаватель программирования, разработчик, аспирант."
   location         : "Иваново"
 #  email            :
-#  uri              :
+  uri              : about
 #  home             : # null (default), "absolute or relative url to link to author home"
   github           : "Vinatorul"
 #  keybase          :
