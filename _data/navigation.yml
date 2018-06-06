@@ -1,5 +1,5 @@
 main:
-  - title: "Categories"
+  - title: "Категории"
     url: /categories/
-  - title: "Tags"
+  - title: "Теги"
     url: /tags/
