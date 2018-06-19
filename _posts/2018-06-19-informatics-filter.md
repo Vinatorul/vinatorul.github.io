@@ -64,7 +64,7 @@ https://informatics.msk.ru/mod/statements/view3.php?chapterid=1&submit#1
 
 ### Пример
 
-Например, мы хотим выбрать все мои (id=302820) посылки по задаче "1664. Суперсумма". Подходящая URL:
+Например, мы хотим выбрать все мои (id=302820) посылки по задаче "1664. Суперсумма":
 
 {% highlight html %}
 https://informatics.msk.ru/mod/statements/view3.php?chapterid=1664&user_id=302820&submit#1
