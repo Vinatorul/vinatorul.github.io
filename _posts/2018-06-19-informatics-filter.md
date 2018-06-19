@@ -25,7 +25,7 @@ https://informatics.msk.ru/mod/statements/view3.php?chapterid=1&submit#1
 | user_id   | id пользователя (можно найта в url его страницы `https://informatics.msk.ru/moodle/user/view.php?id=302820`) |
 | lang_id   | id компилятора |
 
-#### Статусы посылок
+### Статусы посылок
 
 | id | Статус |
 | -- | :----: |
@@ -42,7 +42,7 @@ https://informatics.msk.ru/mod/statements/view3.php?chapterid=1&submit#1
 | 10 | Дисквалифицировано |
 | 14 | Ошибка оформления кода |
 
-#### Компиляторы
+### Компиляторы
 
 | id | Компилятор |
 | -- | :----: |
@@ -62,7 +62,7 @@ https://informatics.msk.ru/mod/statements/view3.php?chapterid=1&submit#1
 | 29 | FreeBASIC 1.05.0 |
 | 30 | PascalABC 3.1.0.1198 |
 
-#### Пример
+### Пример
 
 Например, мы хотим выбрать все мои (id=302820) посылки по задаче "1664. Суперсумма". Подходящая URL:
 
@@ -82,7 +82,7 @@ https://informatics.msk.ru/mod/statements/view3.php?chapterid=1664&lang_id=27&us
 https://informatics.msk.ru/mod/statements/view3.php?chapterid=1664&lang_id=3&status_id=0&submit#1
 {% endhighlight %}
 
-#### PS
+### PS
 
 Подобные фильтры можно применять и на других страницах. Например, нам потребовалось получить все успешные посылки пользователя на языке Free Pascal. Для примера опять же использую свой id:
 
