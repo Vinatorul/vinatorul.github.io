@@ -1,4 +1,6 @@
 main:
+  - title: "Blockly"
+    url: /blockly/
   - title: "Категории"
     url: /categories/
   - title: "Теги"
