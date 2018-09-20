@@ -233,3 +233,8 @@ defaults:
       comments: true
       share: true
       related: true
+  -
+    scope:
+      path: "blockly"
+    values:
+      sitemap: true
